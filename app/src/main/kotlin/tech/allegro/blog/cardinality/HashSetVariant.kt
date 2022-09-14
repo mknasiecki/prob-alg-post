@@ -6,12 +6,12 @@ class HashSetVariant {
     companion object {
 
         private const val n: Long = 10000000
-        private const val f = 0.75
+        private const val f = 0.25
 
         @JvmStatic
         fun main(args: Array<String>) {
-            val set = HashSet<Long>()
             val mod = (n * f).toLong()
+            val set = HashSet<Long>(mod.toInt())
             var cardinality: Int
 
             //Pause the program to connect the process from jConsole
@@ -27,6 +27,7 @@ class HashSetVariant {
             }
 
             println("cardinality: $cardinality")
+            println("cardinality2: $mod")
             println("time: $elapsed ms")
             readln()
         }

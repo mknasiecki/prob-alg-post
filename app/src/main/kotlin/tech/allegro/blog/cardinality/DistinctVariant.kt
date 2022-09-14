@@ -6,7 +6,7 @@ class DistinctVariant {
     companion object {
 
         private const val n: Long = 10000000
-        private const val f = 0.75
+        private const val f = 0.25
 
         @JvmStatic
         fun main(args: Array<String>) {

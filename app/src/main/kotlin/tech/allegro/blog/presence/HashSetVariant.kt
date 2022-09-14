@@ -4,13 +4,13 @@ import kotlin.system.measureTimeMillis
 
 class HashSetVariant {
     companion object {
-        private const val n: Int = 500000000
+        private const val n: Int = 10000000
         private const val f = 0.1
 
         @JvmStatic
         fun main(args: Array<String>) {
             val insertions = (n * f).toInt()
-            val set = HashSet<Int>()
+            val set = HashSet<Int>(insertions)
 
             //Pause the program to connect the process from jConsole
             println("Press enter to start")
