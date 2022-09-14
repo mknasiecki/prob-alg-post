@@ -27,7 +27,6 @@ class HashSetVariant {
             }
 
             println("cardinality: $cardinality")
-            println("cardinality2: $mod")
             println("time: $elapsed ms")
             readln()
         }
